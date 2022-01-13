@@ -24,15 +24,5 @@ pipeline{
           sh 'docker build -t yash922/testwebapp:2.0.0 .' 
         }
     }
-
-    stage('Docker push') {
-      steps {
-        withDockerRegistry([credentialsId: 'docke', url: '']) {
-            script {
-            sh 'docker push yash922/testwebapp:2.0.0'
-            }
-        }
-      }
-    }
   }
 }
