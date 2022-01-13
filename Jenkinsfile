@@ -8,7 +8,7 @@ pipeline{
       steps {
         withDockerRegistry([credentialsId: 'docke', url: '']) {
             script {
-            sh 'docker push yash922/testwebapp:3.0.0'
+            sh 'docker push yash922/testwebapp:2.0.0'
             }
         }
       }
