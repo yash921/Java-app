@@ -21,7 +21,7 @@ pipeline{
 
     stage('Docker Build and Tag') {
       steps {
-          sh 'docker build -t yash922/testwebapp:2.0.0 .' 
+          sh 'docker build -t yash922/testwebapp:3.0.0 .' 
         }
     }
   }
